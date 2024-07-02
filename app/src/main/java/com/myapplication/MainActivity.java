@@ -1,12 +1,9 @@
 package com.myapplication;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +12,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+/**
+ * 2. Создайте приложение, которое:
+ * 1. Отслеживает жизненный цикл активити и показывает его на экране (или в логах)
+ * 2. При переходе на кнопку открывается второй экран
+ */
 public class MainActivity extends AppCompatActivity {
 
     //TextView textView;
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 //Log.d("MainActivity", "Мы нажали кнопку");
                 // явный вызов
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                //startActivity(intent);
+                startActivity(intent);
                 //неявный вызов
 //                Uri adress = Uri.parse("www.google.com");
 //                Intent intent = new Intent(Intent.ACTION_VIEW, adress);
